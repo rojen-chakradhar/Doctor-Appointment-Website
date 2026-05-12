@@ -5,15 +5,21 @@ nav {
   padding: 0.5rem 0;
 }
 
+nav a:has(img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
   column-gap: 5rem;
-  font-size: 1rem;
   text-transform: uppercase;
 }
 
 .nav-link a {
+  font-size: 1rem;
   font-weight: 500;
   color: var(--secondary);
   transition: text-decoration 0.3s ease;
@@ -33,7 +39,7 @@ nav {
   width: 0;
   border: none;
   border-radius: 1rem;
-  transition: width 0.3s ease;
+  transition: width var(--transition);
   background-color: var(--secondary);
 }
 
@@ -42,6 +48,7 @@ nav {
 }
 
 .nav-cta {
+  padding: 0.5rem 1.5rem;
   font-style: 1rem;
   color: var(--primary);
   background-color: var(--cta);

@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: none;
   border-radius: 0.5rem;
   background-color: var(--secondary);
 }
@@ -12,19 +11,22 @@
 .hero-heading, .hero-img {
   flex: 1;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 5rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--primary);
 }
 
 .hero-para {
-  font-size: 1rem;
-  margin: 2rem 0 1rem;
+  font-size: calc(1.5rem / 1.6);
+  margin-top: 2rem;
   line-height: 1.5;
   color: var(--primary);
 }
@@ -42,13 +44,7 @@ h1 {
 h2 {
   text-align: center;
   font-weight: 500;
-}
-
-.para {
-  font-size: 1rem;
-  margin: 1rem 0;
-  text-align: center;
-  line-height: 1.5;
+  color: var(--secondary);
 }
 
 .specialities {
@@ -92,6 +88,12 @@ h2 {
   border: 1px solid #00000020;
   border-radius: 1rem;
   overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--transition);
+}
+
+.doc:hover{
+  transform: translateY(-0.5rem);
 }
 
 .doc-img {

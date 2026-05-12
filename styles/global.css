@@ -7,7 +7,7 @@
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
-  /*outline: 1px dotted red;*/
+  outline: 1px dotted red;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -19,12 +19,16 @@ body {
   width: 100%;
 }
 
+html {
+  font-size: 16px;
+}
+
 :root {
   --primary: #fffffe;
   --cta: #eebbc3;
   --extra: #b8c1ec;
   --secondary: #232946;
-  /* divide by 1.6 to know the size of sibling */
+  --transition: 0.3s ease;
 }
 
 body {
@@ -36,10 +40,27 @@ body {
 }
 
 .cta {
-  padding: 0.5rem 1.5rem;
+  padding: 0.8rem 1.8rem;
   text-transform: capitalize;
   font-weight: 500;
   border: none;
   border-radius: 1.5rem;
   cursor: pointer;
+  transition: scale var(--transition);
+}
+
+.cta:hover {
+  scale: 1.05;
+}
+
+.cta i {
+  font-size: 1rem;
+}
+
+.para {
+  font-size: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--secondary);
 }
