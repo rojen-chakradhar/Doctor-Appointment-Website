@@ -1,0 +1,11 @@
+footer {
+  margin-top: 4rem;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .para {
+  width: 50%;
+}

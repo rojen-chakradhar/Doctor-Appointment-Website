@@ -19,12 +19,20 @@ body {
   width: 100%;
 }
 
+:root {
+  --primary: #fffffe;
+  --cta: #eebbc3;
+  --extra: #b8c1ec;
+  --secondary: #232946;
+  /* divide by 1.6 to know the size of sibling */
+}
+
 body {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
   padding: 0 5vw;
-  background-color: #efefef;
+  background-color: var(--primary);
 }
 
 .cta {
