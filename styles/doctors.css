@@ -1,0 +1,83 @@
+main {
+  display: flex;
+  column-gap: 1rem;
+  margin-top: 2rem;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  width: 20%;
+}
+
+.btn {
+  text-transform: capitalize;
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+  padding: 12px 16px;
+  color: var(--primary);
+  color: var(--secondary);
+  background-color: var(--cta);
+  transition: scale 0.3s ease;
+}
+
+.btn:hover {
+  scale: 1.05;
+}
+
+.btn:active {
+  scale: 0.9;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.doc {
+  height: 250px;
+  width: 200px;
+  border: 1px solid #00000020;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform var(--transition);
+}
+
+.doc:hover{
+  transform: translateY(-0.5rem);
+}
+
+.doc-img {
+  height: 65%;
+  width: 100%;
+  background-color: var(--secondary);
+}
+
+.doc-info {
+  height: 350%;
+  width: 100%;
+  padding: 10px;
+}
+
+.availability {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  color: limegreen;
+}
+
+.name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+
+.job {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
