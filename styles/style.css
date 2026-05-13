@@ -126,6 +126,10 @@ h2 {
   text-transform: capitalize;
 }
 
+.sec .para {
+  text-align: center;
+}
+
 .docs {
   display: flex;
   flex-direction: column;

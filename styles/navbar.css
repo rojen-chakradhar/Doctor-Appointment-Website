@@ -1,14 +1,21 @@
-nav {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 0;
 }
 
-nav a:has(img) {
+.navbar a:has(img) {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.nav-logo {
+  height: 30px;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .nav-links {
@@ -49,7 +56,5 @@ nav a:has(img) {
 
 .nav-cta {
   padding: 0.5rem 1.5rem;
-  font-style: 1rem;
   color: var(--primary);
-  background-color: var(--cta);
 }
