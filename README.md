@@ -17,3 +17,5 @@ A small multipage website where you can discover doctors and book a appointment.
 - search [pulga.rojen.name.np](https://la-pulga.netlify.app/)
 or
 - clone the repo via my github
+
+### No AI was used to make this. I did ask chatgpt for how to make filter for catalog, but i didnt use it.
