@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc La Pulga</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="./index.html"><img src="./assets/images/logo.png" height="30px" alt="logo" class="nav-logo"></a>
+      <ul class="nav-links">
+        <li class="nav-link active"><a href="./index.html">home</a></li>
+        <li class="nav-link"><a href="./doctors.html">doctors</a></li>
+        <li class="nav-link"><a href="./about.html">about</a></li>
+        <li class="nav-link"><a href="#footer">contact</a></li>
+      </ul>
+      <a href="./login.html"><button class="cta nav-cta">create account</button></a>
+    </nav>
+    <main class="container">
+      <section class="form-box active" id="signupForm">
+        <h2>create account</h2>
+        <p class="para">Please create account to book appointment.</p>
+        <form id="signup">
+          <label>username:</label>
+          <input type="text" name="username" id="signupName" required>
+          <label>email:</label>
+          <input type="email" name="email" id="email" required>
+          <label>password:</label>
+          <div class="password">
+            <input type="password" name="password" id="password" minlength="8" required>
+            <i class="ri-eye-line toggle-password"></i>
+          </div>
+          <button class="cta" type="submit">create account</button>
+        </form>
+        <p class="para">Already have an account? <span id="showLogin">login</span></p>
+      </section>
+      <section class="form-box" id="loginForm">
+        <h2>login</h2>
+        <p class="para">Please log in to book appointment.</p>
+        <form id="login">
+          <label>username:</label>
+          <input type="text" name="username" id="loginName" required>
+          <label>email:</label>
+          <input type="email" name="email" id="loginEmail" required>
+          <label>password:</label>
+          <div class="password">
+            <input type="password" name="password" id="loginPassword" required>
+            <i class="ri-eye-line toggle-password"></i>
+          </div>
+          <button type="submit" class="cta">login</button>
+        </form>
+        <p class="para">Don't have an account? <span id="showSignup">signup</span></p>
+      </section>
+    </main>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+h2,
+p,
+span,
+label {
+  text-transform: capitalize;
+	color: var(--secondary);
+}
+
+main {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section {
+  display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+	padding: 10px;
+	border: 1px solid var(--secondary);
+	border-radius: 0.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-box {
+	display: none;
+}
+
+.active {
+	display: flex;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 3px 5px;
+}
+
+.password {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+i {
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+form .cta {
+  margin: 20px 0 20px 0;
+	color: var(--primary);
+}
+
+span {
+  text-decoration: underline;
+  color: var(--cta);
+  cursor: pointer;
+}
