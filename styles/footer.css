@@ -67,3 +67,20 @@ footer h3 {
   border-top: 1px solid var(--extra);
   text-align: center;
 }
+
+@media (max-width: 425px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+.footer-logo {
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+.footer .para {
+  width: 100%;
+}
+}

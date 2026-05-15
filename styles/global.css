@@ -67,3 +67,9 @@ body {
   line-height: 1.2;
   color: var(--secondary);
 }
+
+@media (max-width: 425px) {
+  body {
+    padding: 0 2rem;
+  }
+}
