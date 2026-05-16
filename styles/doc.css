@@ -89,7 +89,7 @@
   border: 1px solid var(--secondary);
   border-radius: 1rem;
   cursor: pointer;
-  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+  transition: transform var(--transition), color var(--transition), background-color var(--transition);
 }
 
 .time {
