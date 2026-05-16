@@ -142,6 +142,10 @@ h2 {
   color: limegreen;
 }
 
+a .name, a .job {
+  color: var(--secondary);
+}
+
 .name {
   font-size: 1.2rem;
   font-weight: 500;
