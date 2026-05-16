@@ -217,7 +217,11 @@
       </section>
     </footer>
     <script>
-      alert("made something after awhile so responsiveness might be bad.")
+      let hasVisited = localStorage.getItem("hasVisited");
+      if(!hasVisited) {
+        alert("made something after awhile so responsiveness might be bad.")
+        localStorage.setItem("hasVisited", "true")
+      }
     </script>
   </body>
 </html>
