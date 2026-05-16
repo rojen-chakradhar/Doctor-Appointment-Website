@@ -1,0 +1,117 @@
+.doc {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.doc-img {
+  border-radius: 1rem;
+  background-color: var(--secondary);
+}
+
+.doc-img img {
+  height: 200px;
+  width: auto;
+}
+
+.doc-info {
+  padding: 1rem;
+  border: 1px solid var(--secondary);
+  border-radius: 1rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--secondary);
+}
+
+.study {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.para {
+  font-size: 1rem;
+}
+
+.para:has(i) {
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.price {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--secondary);
+}
+
+.booking {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--secondary);
+}
+
+.days, .times {
+  width: 60%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.day, .time {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.5rem;
+  padding: 10px;
+  text-transform: capitalize;
+  border: 1px solid var(--secondary);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.time {
+  height: 50px;
+  flex-direction: row;
+  row-gap: 0;
+}
+
+.day:hover, .time:hover {
+  transform: translateY(-5px);
+}
+
+.active {
+  background-color: var(--secondary);
+}
+
+.active .para {
+  font-weight: 500;
+  color: var(--primary);
+}
+
+main .cta {
+  margin-top: 2rem;
+  color: var(--primary);
+}
