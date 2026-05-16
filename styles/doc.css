@@ -1,7 +1,7 @@
 .doc {
   display: flex;
   align-items: center;
-  column-gap: 1rem;
+  gap: 1rem;
 }
 
 .doc-img {
@@ -114,4 +114,34 @@
 main .cta {
   margin-top: 2rem;
   color: var(--primary);
+}
+
+@media (max-width: 950px) {
+  .days, .times {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .doc {
+    flex-wrap: wrap;
+  }
+  .days, .times {
+    width: 100%;
+  }
+  .day {
+    width: 50px;
+  }
+  .time {
+    width: 50%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .doc {
+    flex-wrap: wrap;
+  }
+  .days, .times {
+    width: 100%;
+  }
 }
