@@ -45,23 +45,23 @@ times.forEach(time => {
 
 function bookAppointment(doctorName, specialty, fee) {
   if (!auth.isLoggedIn()) {
-    alert("Please login to book an appointment");
-    window.location.href = "./login.html";
+    toast.error("Please login to book an appointment");
+    setTimeout(() => window.location.href = "./login.html", 500);
     return;
   }
 
   if (!selectedDay || !selectedTime) {
-    alert("Please select both date and time");
+    toast.warning("Please select both date and time");
     return;
   }
 
   const result = auth.addBooking(doctorName, specialty, fee, selectedDay, selectedTime);
   if (result.success) {
-    alert(result.message);
+    toast.success(result.message);
     localStorage.removeItem("selectedDay");
     localStorage.removeItem("selectedTime");
-    window.location.href = "./profile.html";
+    setTimeout(() => window.location.href = "./profile.html", 500);
   } else {
-    alert(result.message);
+    toast.error(result.message);
   }
 }
