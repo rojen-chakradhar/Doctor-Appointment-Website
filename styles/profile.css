@@ -1,0 +1,102 @@
+.profile-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 2rem;
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 2rem auto;
+}
+
+.profile-card {
+	background: var(--primary);
+	border-radius: 10px;
+	padding: 2rem;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	height: fit-content;
+}
+
+.profile-info h2 {
+	color: var(--cta);
+  font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+.profile-info p {
+	margin: 0.5rem 0;
+	color: var(--secondary);
+}
+
+.profile-info label {
+	font-weight: bold;
+	color: var(--secondary);
+}
+
+.logout-btn {
+	width: 100%;
+	margin-top: 1.5rem;
+  color: var(--primary);
+}
+
+.bookings {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.booking-card {
+	background: var(--primary);
+	border-radius: 10px;
+	padding: 1.5rem;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 1rem;
+	align-items: start;
+}
+
+.booking-details h3 {
+  font-weight: 500;
+	color: var(--secondary);
+	margin-bottom: 0.5rem;
+}
+
+.booking-details p {
+	margin: 0.3rem 0;
+	color: var(--secondary);
+}
+
+.booking-details .fee {
+	font-weight: bold;
+	color: var(--secondary);
+	margin-top: 0.5rem;
+}
+
+.cancel-btn {
+	color: white;
+}
+
+.no-bookings {
+	text-align: center;
+	color: var(--extra);
+	padding: 2rem;
+}
+
+.no-bookings a {
+	color: var(--cta);
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.no-bookings a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.profile-container {
+		grid-template-columns: 1fr;
+	}
+
+	.booking-card {
+		grid-template-columns: 1fr;
+	}
+}

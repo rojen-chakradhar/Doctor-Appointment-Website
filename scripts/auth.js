@@ -1,4 +1,3 @@
-// Auth Management System
 class AuthManager {
   constructor() {
     this.usersKey = "users";

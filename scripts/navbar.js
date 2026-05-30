@@ -1,10 +1,9 @@
-// Initialize navbar based on login status
 function initializeNavbar() {
   const navCTA = document.querySelector(".nav-cta");
   
   if (auth.isLoggedIn()) {
     const user = auth.getCurrentUser();
-    navCTA.textContent = user.username;
+    navCTA.innerHTML = `<i class="ri-user-line"></i>`;
     navCTA.parentElement.href = "./profile.html";
   }
 }

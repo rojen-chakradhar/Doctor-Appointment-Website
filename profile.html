@@ -7,130 +7,10 @@
     <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/profile.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/toast.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-    <style>
-      .profile-container {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        gap: 2rem;
-        padding: 2rem;
-        max-width: 1200px;
-        margin: 2rem auto;
-      }
-
-      .profile-card {
-        background: white;
-        border-radius: 10px;
-        padding: 2rem;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        height: fit-content;
-      }
-
-      .profile-info h2 {
-        color: #4f7cff;
-        margin-bottom: 1rem;
-      }
-
-      .profile-info p {
-        margin: 0.5rem 0;
-        color: #666;
-      }
-
-      .profile-info label {
-        font-weight: bold;
-        color: #333;
-      }
-
-      .logout-btn {
-        width: 100%;
-        margin-top: 1.5rem;
-        padding: 0.75rem;
-        background: #ff4757;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1rem;
-      }
-
-      .logout-btn:hover {
-        background: #ff3838;
-      }
-
-      .bookings {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .booking-card {
-        background: white;
-        border-radius: 10px;
-        padding: 1.5rem;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        display: grid;
-        grid-template-columns: 1fr auto;
-        gap: 1rem;
-        align-items: start;
-      }
-
-      .booking-details h3 {
-        color: #4f7cff;
-        margin-bottom: 0.5rem;
-      }
-
-      .booking-details p {
-        margin: 0.3rem 0;
-        color: #666;
-      }
-
-      .booking-details .fee {
-        font-weight: bold;
-        color: #333;
-        margin-top: 0.5rem;
-      }
-
-      .cancel-btn {
-        padding: 0.5rem 1rem;
-        background: #ff4757;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-
-      .cancel-btn:hover {
-        background: #ff3838;
-      }
-
-      .no-bookings {
-        text-align: center;
-        color: #999;
-        padding: 2rem;
-      }
-
-      .no-bookings a {
-        color: #4f7cff;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      .no-bookings a:hover {
-        text-decoration: underline;
-      }
-
-      @media (max-width: 768px) {
-        .profile-container {
-          grid-template-columns: 1fr;
-        }
-
-        .booking-card {
-          grid-template-columns: 1fr;
-        }
-      }
-    </style>
   </head>
   <body>
     <nav class="navbar">
@@ -160,7 +40,7 @@
               <label>Member Since:</label><br>
               <span id="memberSince"></span>
             </p>
-            <button class="logout-btn" onclick="logout()">Logout</button>
+            <button class="logout-btn cta" onclick="logout()">Logout</button>
           </div>
         </div>
         <div class="profile-card">
@@ -237,7 +117,7 @@
                 <p><strong>Time:</strong> ${booking.time}</p>
                 <p class="fee"><strong>Fee:</strong> ${booking.doctorFee}</p>
               </div>
-              <button class="cancel-btn" onclick="cancelBooking(${booking.id})">Cancel</button>
+              <button class="cancel-btn cta" onclick="cancelBooking(${booking.id})">Cancel</button>
             </div>
           `).join("");
         }
