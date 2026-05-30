@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/toast.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body>
@@ -240,10 +241,10 @@
     <script>
       let hasVisited = localStorage.getItem("hasVisited");
       if(!hasVisited) {
-        alert("made something after awhile so responsiveness might be bad.")
         localStorage.setItem("hasVisited", "true")
       }
     </script>
+    <script src="./scripts/toast.js"></script>
     <script src="./scripts/auth.js"></script>
     <script src="./scripts/navbar.js"></script>
   </body>
