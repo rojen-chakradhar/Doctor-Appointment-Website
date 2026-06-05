@@ -1,6 +1,8 @@
 # Doctor Apointment Website
 A small multipage website where you can discover doctors and book a appointment.
 
+<img src="./assets/images/cover.png" alt="cover image">
+
 ## functions
 - booking
 - multipage
