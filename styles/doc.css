@@ -5,12 +5,11 @@
 }
 
 .doc-img {
-  border-radius: 1rem;
   background-color: var(--secondary);
 }
 
 .doc-img img {
-  height: 200px;
+  height: 250px;
   width: auto;
 }
 
@@ -38,7 +37,7 @@
 }
 
 .para:has(i) {
-  margin-bottom: 0.3rem;
+  margin: 0.5rem 0 0.2rem;
   font-size: 1rem;
   font-weight: 500;
   text-transform: capitalize;
